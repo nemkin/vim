@@ -2,3 +2,6 @@
 	path = bundle/YouCompleteMe
 	url = git@github.com:Valloric/YouCompleteMe.git
 	branch = master
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
