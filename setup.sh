@@ -1,8 +1,8 @@
 git submodule update --init --recursive
-sudo apt install build-essential cmake python-dev python3-dev mono-xbuild libmono-system-xml-linq4.0-cil libmono-microsoft-csharp4.0-cil libmono-system-data-datasetextensions4.0-cil
+sudo apt install build-essential cmake python-dev python3-dev
 cd bundle/YouCompleteMe
-./install.py --all
+./install.py --clang-completer
 cd -
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-echo $DIR
+rm ~/.vimrc > /dev/null
 ln -s $DIR/vimrc ~/.vimrc
