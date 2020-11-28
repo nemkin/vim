@@ -8,6 +8,10 @@ set shiftwidth=2
 
 set hlsearch
 
+" Highlight trailing spaces
+:highlight ExtraWhitespace ctermbg=red guibg=red
+:match ExtraWhitespace /\s\+$/
+
 " ctags
 " set tags=<path>
 
@@ -33,6 +37,9 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 " 81th column colored.
 :set colorcolumn=81
+
+" 121th column colored.
+:set colorcolumn=121
 
 " Highlight anything after 80 characters.
 " highlight OverLength ctermbg=red ctermfg=white guibg=#592929
